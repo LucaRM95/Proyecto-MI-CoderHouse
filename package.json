@@ -1,0 +1,25 @@
+{
+  "name": "desafio-y-complementario-luca-rojas-massey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-styles": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 assets/css/main.scss assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucaRM95/Proyecto-MI-CoderHouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucaRM95/Proyecto-MI-CoderHouse/issues"
+  },
+  "homepage": "https://github.com/LucaRM95/Proyecto-MI-CoderHouse#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.3.3",
+    "node-sass": "^6.0.1"
+  }
+}

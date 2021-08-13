@@ -87,6 +87,10 @@
             width: 100%;
         }
 
+        .bg-MI{
+            background-color: $MI_color_primary_hover;
+        }
+
         /* Seccion de nuestro trabajo BEM*/
         .work-section{
             display: flex;
@@ -191,26 +195,11 @@
                     }
                 }
             }
-            &__products{
-                align-items: flex-start;
-                justify-content: space-around;
-                width: 100%;
-                min-height: ($min_height)-235px;
-                &--card{
-                    display: flex;
-                    flex-direction: row;
-                    background-color: $MI_color_primary_hover;
-                    border-radius: 3px;
-                    margin-top: 10px;
-                    width: 45%;
-                    img{
-                        width: 195px;
-                        height: ($general_height)-3;
-                        border-radius: 3px;
-                    }
-                    .btn{
-                        width: 22%;
-                    }
+            &__cards{
+                max-width: 700px;
+                &--img_heigth{
+                    max-width: 100%;
+                    height: 176px;
                 }
             }
         }

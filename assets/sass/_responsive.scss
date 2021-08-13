@@ -1,19 +1,4 @@
 /*Responsive*/
-@media only screen and (max-width: 1440px){
-    *, html {
-        .contain{
-            &__products{
-                &--card{
-                    width: 58%;
-                    img{
-                        height: 173px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media only screen and (max-width: 1280px){
     *, html{
         footer{
@@ -44,35 +29,10 @@
     }
 }
 
-@media only screen and (max-width: 1024px){
-    *, html {
-        .contain{
-            &__products{
-                &--card{
-                    width: 100% !important;
-                    img{
-                        height: 173px;
-                    }
-                }
-            }
-        }
-    }
-}
-
 @media only screen and (max-width: 962px){
     *, html {
         .contain{
             width: 90% !important;
-            // &__main{
-            // }
-            &__products{
-                &--card{
-                    width: 100%;
-                    img{
-                        height: 173px;
-                    }
-                }
-            }
         }
     }
 }
@@ -82,6 +42,18 @@
         &__item{
             &--bg{
                 width: 90% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .contain{
+        &__cards{
+            max-width: 700px;
+            &--img_heigth{
+                max-width: 100%;
+                height: auto !important;
             }
         }
     }
@@ -99,24 +71,6 @@
             .content{
                 &--contact{
                     margin: 10rem 0 10rem 0;
-                }
-            }
-            .contain{
-                &__products{
-                    align-items: center;
-                    width: 100vw;
-                    &--card{
-                        height: 455px;
-                        width: 60% !important;
-                        flex-direction: column;
-                        img{
-                            height: 255px !important;
-                            width: 100%;
-                        }
-                        .btn{
-                            width: 42%;
-                        }
-                    }
                 }
             }
             .contact_section{
@@ -207,38 +161,11 @@
             .contain{
                 width: 100%;
                 margin: 0;
-                &__products{
-                    margin-bottom: 20px;
-                    margin-top: 20px;
-                    &--card{
-                        width: 70% !important;
-                        img{
-                            width: 255px !important;
-                        }
-                        .btn{
-                            width: 55%;
-                        } 
-                    }
-                }
             }
             .contact_section{
                 &__item{
                     &--bg{
                         width: 100% !important;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 375px){
-    *, html{
-        body {
-            .contain{
-                &__products{
-                    &--card{
-                        width: 79% !important;
                     }
                 }
             }
@@ -255,11 +182,6 @@
                     &--help{
                         width: 100% !important;
                         height: 600px !important;
-                    }
-                }
-                &__products{
-                    &--card{
-                        width: 93% !important;
                     }
                 }
             }
