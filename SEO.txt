@@ -1,0 +1,11 @@
+Mejoras en el proyecto para SEO:
+
+1) Se agregan los titles a todas las paginas de la web.
+2) Se reduce el tamaño de las imagenes.
+4) El correcto uso de las etiquetas "h".
+5) Se separan las secciones de la web en una carpeta separada.
+6) Se crea una pagina de 404 con reedirección al index.
+7) Se agregan las keywords correspondientes a la web.
+8) Se agrega la descripción correspondiente a la web.
+9) Se aplica el responsive para moviles.
+10) Correcta utilización de las etiquetas semanticas dentro del body.

@@ -1,0 +1,269 @@
+/*Responsive*/
+@media only screen and (max-width: 1440px){
+    *, html {
+        .contain{
+            &__products{
+                &--card{
+                    width: 58%;
+                    img{
+                        height: 173px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    *, html{
+        footer{
+            .logoRedes{
+                justify-content: space-evenly;
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1210px){
+    *, html {
+        body{
+            #grid-content{
+                display: grid;
+                grid-template-rows: .9fr .9fr;
+                grid-template-columns: 1fr;
+                align-items: center;
+            }
+            .contain{
+                &__main{
+                    margin-bottom: 50px;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    *, html {
+        .contain{
+            &__products{
+                &--card{
+                    width: 100% !important;
+                    img{
+                        height: 173px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 962px){
+    *, html {
+        .contain{
+            width: 90% !important;
+            // &__main{
+            // }
+            &__products{
+                &--card{
+                    width: 100%;
+                    img{
+                        height: 173px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 962px){
+    .contact_section{
+        &__item{
+            &--bg{
+                width: 90% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    *, html {
+        body{
+            .header{
+                width: 100%;
+            }
+            #grid-content{
+                grid-template-rows: .7fr .7fr;
+            }
+            .content{
+                &--contact{
+                    margin: 10rem 0 10rem 0;
+                }
+            }
+            .contain{
+                &__products{
+                    align-items: center;
+                    width: 100vw;
+                    &--card{
+                        height: 455px;
+                        width: 60% !important;
+                        flex-direction: column;
+                        img{
+                            height: 255px !important;
+                            width: 100%;
+                        }
+                        .btn{
+                            width: 42%;
+                        }
+                    }
+                }
+            }
+            .contact_section{
+                &__item{
+                    justify-content: flex-start;
+                    &--bg{
+                        width: 85vw !important;
+                    }
+                }
+            }
+            main{
+                .slider {
+                    img {
+                        width: 100%;
+                    }
+                }
+            
+                .cards{
+                    flex-flow: column wrap;
+                }
+            }
+            #not-found-404{
+                .not-found__text{
+                    .btn{
+                        width: 100%;
+                    }
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 560px){
+    *, html {
+        .header{
+            &__items{
+                display: none;
+            }
+        }
+        #grid-content{
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: auto;
+            align-items: center;
+        }
+        .work-section{
+            &__item{
+                width: 100% !important;
+            }
+        }
+    }
+    .btn{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    *, html{
+        body{
+            .contain{
+                &__main{
+                    margin: 0;
+                    min-height: 600px;
+                }
+            
+                .content-cards{
+                    align-items: center;
+                }
+                .slider{
+                    img{
+                        height: 330px;
+                    }
+                }
+            }
+            .text{
+                margin: 0;
+            }
+            .help_section{
+                &__item{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    width: 87% !important;
+                }
+            }
+            .contain{
+                width: 100%;
+                margin: 0;
+                &__products{
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                    &--card{
+                        width: 70% !important;
+                        img{
+                            width: 255px !important;
+                        }
+                        .btn{
+                            width: 55%;
+                        } 
+                    }
+                }
+            }
+            .contact_section{
+                &__item{
+                    &--bg{
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    *, html{
+        body {
+            .contain{
+                &__products{
+                    &--card{
+                        width: 79% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px){
+    *, html {
+        body {
+            .contain{
+                &__main{
+                    width: 100% !important;
+                    &--help{
+                        width: 100% !important;
+                        height: 600px !important;
+                    }
+                }
+                &__products{
+                    &--card{
+                        width: 93% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+

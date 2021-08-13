@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import "../sass/colors-variables";
+/* Header */
+@import "../sass/header/header";
+/* Seccion principal*/
+@import "../sass/principal/principal_section";
+/* Footer */
+@import "../sass/footer/footer";
+
+html{
+    overflow-x: hidden;
+}

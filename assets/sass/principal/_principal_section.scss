@@ -1,0 +1,297 @@
+@import "../colors-variables";
+@import "../responsive";
+
+*, html{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    body{
+        background-image: linear-gradient($color_gradient, $color_gradient), url("../images/bg2.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        color: white;
+        font-family: 'Ubuntu';
+        width: 100%;
+        overflow-x: hidden;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        line-height: 1.6;
+
+        /*Not found page*/
+        #not-found-404{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $color_gradient_header;
+            border-radius: 3px;
+            margin: 2rem;
+            padding: 2rem;
+            // margin-bottom: 50px;
+            .not-found__text{
+                text-align: center;
+                margin-bottom: 5rem;
+                h1{
+                    color: $MI_color_primary;
+                    font-weight: bold;
+                }
+                h3{
+                    color: #444;
+                }
+            }
+        }
+
+        /*MIXINS*/
+        @mixin flex_column{
+            display: flex;
+            flex-direction: column;
+        }
+
+        @mixin flex_column_minH {
+            @include flex_column;
+            min-height: ($min_height)+75px;
+        }
+        /* Clases e IDs de los main*/
+        #grid-content{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+            padding: 20px;
+            height: auto; 
+            /* min-height: 670px; */
+            justify-items: center;
+        }
+
+        .content-cards{
+            @include flex_column;
+        }
+
+        /* Text format BEM*/
+        .text{
+            @include flex_column;
+
+            &__content{
+                margin-left: 10px;
+                &--title{
+                    h3, h2, h1{
+                        color: #ccc;
+                        font-weight: bold;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        .container-main{
+            @include flex_column_minH;
+            width: 100%;
+        }
+
+        /* Seccion de nuestro trabajo BEM*/
+        .work-section{
+            display: flex;
+            justify-content: center;
+            &__item{
+                // background-color: $MI_color_primary;
+                background-color: $MI_color_primary_hover;
+                width: 50%;
+                border-radius: 3px;
+                margin: 1rem;
+                padding: 1rem;
+                &--text{
+                    h1, h2, h3{
+                        font-weight: bold;
+                        color: black;
+                    }
+                    p{
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+
+
+        /* Seccion ayuda BEM*/
+        .help_section{
+            @include flex_column_minH;
+            align-items: center;
+            justify-content: center;
+            width: (50%)*2;
+            min-height: 725px;
+            &__item{
+                @include flex_column;
+                @extend .contain__main;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 50% !important;
+                min-height: 610px !important;
+                &--text{
+                    text-align: center;
+                    h1{
+                        font-weight: bold;
+                    }
+                    h2{
+                        color: #ccc;
+                    }
+                }
+            } 
+        }
+
+        /* Seccion contacto BEM*/
+        .contact_section{
+            @extend .contain;
+            &__item{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 20px;
+                &--bg{
+                    background-color: $MI_color_primary_hover;
+                    border-radius: 3px;
+                    width: 40%;
+                    padding: 3rem;
+                }
+            }
+        }
+
+        /* clase contain BEM*/
+        .contain{
+            @include flex_column_minH;
+            align-items: center;
+            justify-content: center;
+            &__main{
+                background-color: $MI_color_primary_hover !important;
+                border-radius: 3px;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+                width: 84%;
+                min-height: 690px;
+                // width: 70%;
+                &--text{
+                    h2, p, strong, span, form{
+                        margin: 10px;
+                    } 
+                }
+                &--contact{
+                    margin: 2rem;
+                }
+                &--help{
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    width: 55%;
+                    height: ($general_height)+200;
+                }
+                #video{
+                    display: flex;
+                    justify-content: center;
+                    video{
+                        width: 97%;
+                        border-radius: 3px;
+                        margin: 10px;
+                    }
+                }
+            }
+            &__products{
+                align-items: flex-start;
+                justify-content: space-around;
+                width: 100%;
+                min-height: ($min_height)-235px;
+                &--card{
+                    display: flex;
+                    flex-direction: row;
+                    background-color: $MI_color_primary_hover;
+                    border-radius: 3px;
+                    margin-top: 10px;
+                    width: 45%;
+                    img{
+                        width: 195px;
+                        height: ($general_height)-3;
+                        border-radius: 3px;
+                    }
+                    .btn{
+                        width: 22%;
+                    }
+                }
+            }
+        }
+
+        .contentSlider{
+            display: grid;
+            grid-template-rows: 1fr auto;
+            grid-row-gap: 2rem;
+            justify-content: space-around;
+            width: 70%;
+            .slider{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                img{
+                    border-radius: 3px;
+                    width: 100%;
+                }
+            }
+            .cards-rows{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                .card{
+                    background-color: $MI_color_primary_hover;
+                    margin-top: 15px;
+                    .img{
+                        display: flex;
+                        justify-content: center;
+                        background-color: #8B0133;
+                        border: 2px solid black;
+                        border-radius: 80px;
+                        align-items: center;
+                        img{
+                            width: 150px;
+                            height: $general_height;
+                            border-radius: 75px;
+                            border: 2px solid black;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .content{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            &__contact{
+                width: 60%;
+                &--padding{
+                    padding: 5rem;
+                }
+            }
+        }
+
+        .accordion{
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .accordion-body{
+            color: #888585;
+        }
+
+        #content-form{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+        }
+
+        form > label, h5{
+            font-family: Helvetica, bold;
+            color: black;
+        }
+
+        form input, select{
+            padding: 3px;
+            margin: 5px;
+        }
+    }
+}
