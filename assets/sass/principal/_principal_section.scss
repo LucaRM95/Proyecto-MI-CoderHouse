@@ -46,6 +46,7 @@
             min-height: 610px;
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
             &__card{
                 @include display(flex, column, space-around, center);
                 background-color: $MI-color-primary;

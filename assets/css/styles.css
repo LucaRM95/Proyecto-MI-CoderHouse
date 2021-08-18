@@ -635,6 +635,7 @@ footer p {
   min-height: 610px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 * body .main-section__card, html body .main-section__card {
