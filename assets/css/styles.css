@@ -626,6 +626,10 @@ footer p {
   color: #444;
 }
 
+* body #not-found-404 .btn, html body #not-found-404 .btn {
+  width: auto;
+}
+
 * body .main-section, html body .main-section {
   display: flex;
   flex-direction: row;
