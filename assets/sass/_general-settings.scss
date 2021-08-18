@@ -1,0 +1,31 @@
+/*Colors*/
+$MI-color-primary: rgba(184, 134, 69, 0.9);
+$MI_color_secondary: white;
+$MI_color_secondary_hover: #ccc;
+$color_gradient: rgba(47, 23, 15, 0.65);
+$color_gradient_header: #3cecabad;
+$color_gradient_header_second: #ee72e1ad;
+
+
+/*Medidas*/
+$min_height: 500px;
+$general_height: 200px;
+
+/*MIXINS*/
+@mixin flex_column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex_column_minH {
+    @include flex_column;
+    min-height: ($min_height)+75px;
+}
+
+@mixin display($type: flex, $orientation: row, $justify: flex-start, $align: flex-start) {
+    display: $type;
+    flex-direction: $orientation;
+    justify-content: $justify;
+    align-items: $align;
+}
+

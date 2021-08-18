@@ -1,4 +1,4 @@
-@import "../colors-variables";
+@import "../general-settings";
 @import "../responsive";
 
 *, html{
@@ -6,12 +6,11 @@
     padding: 0px;
     margin: 0px;
     body{
-        background-image: linear-gradient($color_gradient, $color_gradient), url("../images/bg2.jpg");
+        background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url(../img/bg2.jpg);
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
         color: white;
-        font-family: 'Ubuntu';
         width: 100%;
         overflow-x: hidden;
         -webkit-text-size-adjust: 100%;
@@ -40,32 +39,121 @@
                 }
             }
         }
-
-        /*MIXINS*/
-        @mixin flex_column{
-            display: flex;
-            flex-direction: column;
-        }
-
-        @mixin flex_column_minH {
-            @include flex_column;
-            min-height: ($min_height)+75px;
-        }
         /* Clases e IDs de los main*/
-        #grid-content{
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-gap: 10px;
-            padding: 20px;
-            height: auto; 
-            /* min-height: 670px; */
-            justify-items: center;
+        .main-section{
+            @include display(flex, row, center, center);
+            background-image: url("../img/MI-bg.png");
+            min-height: 610px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &__card{
+                @include display(flex, column, space-around, center);
+                background-color: $MI-color-primary;
+                border-radius: 5px;
+                width: 30%;
+                height: 250px;
+                &--text{
+                    text-align: center;
+                    line-height: 3rem;
+                    span{
+                        font-weight: bold;
+                        font-size: 20px;
+                        color: #ccc;
+                    }
+                    h1{
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: white;
+                    }
+                }
+            }
         }
-
+        
+        .btn{
+            width: 30%;
+        }
+        
+        .publ-section{
+            @include display(flex, row, center, center);
+            background-color: $MI-color-primary;
+            height: 44px;
+            &__align{
+                @include display(flex, row, center, center);
+                &--text{
+                    font-weight: bold;
+                    color: white;
+                    letter-spacing: 0.3rem;
+                    word-spacing: 0.6rem;
+                }
+            }
+        }
+        
+        .presentation-section{
+            @include display(flex, column, flex-start, center);
+            min-height: 1020px;
+            &__title{
+                @include display(flex, column, flex-start, center);
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+                &--text{
+                    color: white;
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                }
+                &--text_Primary{
+                    color: white;
+                    font-weight: bold;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        
+        .contain{
+            @include flex_column_minH;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4rem;
+            &__main{
+                background-color: $MI-color-primary !important;
+                border-radius: 3px;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+                width: 40%;
+                min-height: 320px;
+                &--text{
+                    @include display(flex, column, center, center);
+                    h2, p, strong, span, form{
+                        text-align: center;
+                        margin-left: 2rem;
+                        margin-right: 2rem;
+                        line-height: 2rem;
+                        width: 60%;
+                    } 
+                }
+                #video{
+                    display: flex;
+                    justify-content: center;
+                    video{
+                        width: 97%;
+                        border-radius: 3px;
+                        margin: 10px;
+                    }
+                }
+            }
+            &__cards{
+                max-width: 700px;
+                margin-bottom: 3.5rem !important;
+                &--img_heigth{
+                    max-width: 100%;
+                    height: 176px;
+                }
+            }
+        }
+        
         .content-cards{
             @include flex_column;
+            margin-top: 5rem !important;
         }
-
         /* Text format BEM*/
         .text{
             @include flex_column;
@@ -88,16 +176,18 @@
         }
 
         .bg-MI{
-            background-color: $MI_color_primary_hover;
+            background-color: $MI-color-primary;
         }
 
         /* Seccion de nuestro trabajo BEM*/
         .work-section{
             display: flex;
             justify-content: center;
+            margin-top: 5rem;
+            margin-bottom: 2rem;
             &__item{
                 // background-color: $MI_color_primary;
-                background-color: $MI_color_primary_hover;
+                background-color: $MI-color-primary;
                 width: 50%;
                 border-radius: 3px;
                 margin: 1rem;
@@ -116,19 +206,40 @@
 
 
         /* Seccion ayuda BEM*/
+        .bg-hs{
+            background-color: #444;
+            border-radius: 3px;
+            width: 60%;
+        }
+
+        .bg-hsa{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #444;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px; 
+            p{
+                font-weight: bold;
+                font-size: 17px;
+                margin-bottom: 0px;
+            }
+        }
+
         .help_section{
             @include flex_column_minH;
             align-items: center;
             justify-content: center;
             width: (50%)*2;
-            min-height: 725px;
+            min-height: 1220px;
+            margin-top: 5rem;
             &__item{
                 @include flex_column;
                 @extend .contain__main;
                 align-items: center;
                 justify-content: space-evenly;
-                width: 50% !important;
-                min-height: 610px !important;
+                width: 50%;
+                min-height: 1080px;
                 &--text{
                     text-align: center;
                     h1{
@@ -144,100 +255,38 @@
         /* Seccion contacto BEM*/
         .contact_section{
             @extend .contain;
+            margin-top: 5rem;
             &__item{
                 display: flex;
                 justify-content: center;
                 width: 100%;
                 padding: 20px;
                 &--bg{
-                    background-color: $MI_color_primary_hover;
+                    @include display(flex, column, center, center);
+                    text-align: center;
+                    background-color: $MI-color-primary;
                     border-radius: 3px;
-                    width: 40%;
-                    padding: 3rem;
-                }
-            }
-        }
-
-        /* clase contain BEM*/
-        .contain{
-            @include flex_column_minH;
-            align-items: center;
-            justify-content: center;
-            &__main{
-                background-color: $MI_color_primary_hover !important;
-                border-radius: 3px;
-                margin-bottom: 1rem;
-                margin-top: 1rem;
-                width: 84%;
-                min-height: 690px;
-                // width: 70%;
-                &--text{
-                    h2, p, strong, span, form{
-                        margin: 10px;
-                    } 
-                }
-                &--contact{
-                    margin: 2rem;
-                }
-                &--help{
-                    justify-content: space-evenly;
-                    flex-wrap: wrap;
                     width: 55%;
-                    height: ($general_height)+200;
-                }
-                #video{
-                    display: flex;
-                    justify-content: center;
-                    video{
-                        width: 97%;
-                        border-radius: 3px;
-                        margin: 10px;
+                    padding: 3rem;
+                    h2{
+                       margin-bottom: 2rem;
+                       font-weight: bold;
+                       letter-spacing: 0.5rem; 
                     }
-                }
-            }
-            &__cards{
-                max-width: 700px;
-                &--img_heigth{
-                    max-width: 100%;
-                    height: 176px;
-                }
-            }
-        }
-
-        .contentSlider{
-            display: grid;
-            grid-template-rows: 1fr auto;
-            grid-row-gap: 2rem;
-            justify-content: space-around;
-            width: 70%;
-            .slider{
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: center;
-                img{
-                    border-radius: 3px;
-                    width: 100%;
-                }
-            }
-            .cards-rows{
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-around;
-                .card{
-                    background-color: $MI_color_primary_hover;
-                    margin-top: 15px;
-                    .img{
+                    span{
+                        color: #ccc;
+                        font-weight: bold;
+                        margin-bottom: 2rem;
+                    }
+                    .shop-iframe{
                         display: flex;
-                        justify-content: center;
-                        background-color: #8B0133;
-                        border: 2px solid black;
-                        border-radius: 80px;
-                        align-items: center;
-                        img{
-                            width: 150px;
-                            height: $general_height;
-                            border-radius: 75px;
-                            border: 2px solid black;
+                        justify-content: space-evenly;
+                        width: 100%;
+                        margin-bottom: 2rem;
+                        margin-top: 2rem;
+                        iframe{
+                            width: 300px;
+                            height: 280px;
                         }
                     }
                 }

@@ -1,85 +1,11 @@
-@import "../colors-variables";
+@import "../_general-settings";
 @import "../responsive";
 
-header{
-    background-color: $MI_color_primary;
-    background-image: linear-gradient(50deg, $color_gradient_header 0%, $color_gradient_header_second 100%), url("../images/Fondo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    display: flex;
-    margin: 0px;
-    a{
-        cursor: default;
-    }
-    .logo{
-        height: ($general_height)+75;
-        display: inline;
-        &--hover:hover{
-            cursor: pointer;
-            transition: 300ms all;
-            transform: scale(1.1, 1.1);
-        }
-    }
+.navbar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
-
-/*Aplicando BEM*/
-.header{
-    display: flex;
-    width: 45%;
-    justify-content: space-evenly;
-    &__items{
-        display: flex;
-        align-items: center;
-        color: black;
-        &--text{
-            h1, h2, h3{
-                font-weight: bold !important;
-                font-size: 2rem;
-            }
-            span{
-                text-transform: uppercase;
-            }
-            p{
-                font-size: 1.2rem;
-            }
-        }
-    }
-}
-
-nav{    
-    .navbar-collapse {
-        flex-basis: 100%;
-        flex-grow: 0;
-        align-items: center;
-        justify-items: flex-end;
-        .navbar-nav{
-            .nav-item{
-                .nav-link{
-                    &--mod{
-                        color: $MI_color_secondary !important;
-                        transition: 300ms all;
-                        &:hover{
-                            color: $MI_color_secondary_hover !important;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .bg-dark {
-        background-color: rgba(33, 37, 41, 0.9)!important;
-    }
-    /*Aplicando BEM con clase de Boostrap*/
-    .navbar-item{
-        &--mod{
-            color: $MI_color_secondary !important;
-            transition: 300ms all;
-            &:hover{
-                color: $MI_color_secondary_hover !important;
-                transform: scale(1.1);
-            }
-        }
-    }
+.bg-dark{
+    background-color: rgba(34, 38, 42, 0.9) !important;
 }

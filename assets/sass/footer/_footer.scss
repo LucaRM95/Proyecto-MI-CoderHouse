@@ -1,27 +1,41 @@
+@import "../general-settings";
 @import "../responsive";
 
 /* Estilos footer*/
 footer{
-    display: flex;
-    background-color: rgba(33, 37, 41, 0.9);
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    height: ($general_height)-102;
-    .logoRedes{
-        display: flex;
-        justify-content: space-evenly;
-        width: 25%;
-        a {
-            img{
-                width: 30px;
-                height: ($general_height)-170;
+    @include display(flex, column, space-evenly, center);
+    min-height: 251px;
+    background-color: rgba(34, 38, 42, 0.9);
+    .footer-section{
+        @include display(flex, row, space-evenly, center);
+        width: 100%;
+        &__contact{
+            @include display(flex, column, space-evenly, center);
+            height: 10rem;
+            &--redes{
+                @include display(flex, row, space-evenly, center);
+                width: 30%;
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 1rem;
+                }
+                img:hover{
+                    transition: 300ms all;
+                    transform: scale(1.2, 1.2);
+                }
             }
-            img:hover{
-                transition: 300ms all;
-                transform: scale(1.2, 1.2);
+            &--form{
+                @include display(flex, column, space-evenly, center);
+                height: 10rem;
+                .btn{
+                    width: 100% !important;
+                }
             }
         }
-    }   
+    }
+    p{
+        font-weight: bold;
+        color: #ccc;
+    }
 }

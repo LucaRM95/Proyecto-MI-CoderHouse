@@ -1,0 +1,983 @@
+/*Colors*/
+/*Medidas*/
+/*MIXINS*/
+/*Responsive*/
+@media only screen and (max-width: 1280px) {
+  * footer .logoRedes, html footer .logoRedes {
+    justify-content: space-evenly;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  * body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
+    margin-bottom: 50px;
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 962px) {
+  * .contain, * body .contact_section, * html body .contact_section, html body * .contact_section, html .contain, * body html .contact_section, html body .contact_section {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 962px) {
+  .contact_section__item--bg {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contain__cards {
+    max-width: 700px;
+  }
+  .contain__cards--img_heigth {
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  * body .header, html body .header {
+    width: 100%;
+  }
+  * body #grid-content, html body #grid-content {
+    grid-template-rows: .7fr .7fr;
+  }
+  * body .content--contact, html body .content--contact {
+    margin: 10rem 0 10rem 0;
+  }
+  * body .main-section__card, html body .main-section__card {
+    width: 60% !important;
+  }
+  * body .contact_section__item, html body .contact_section__item {
+    justify-content: flex-start;
+  }
+  * body .contact_section__item--bg, html body .contact_section__item--bg {
+    width: 85vw !important;
+  }
+  * body main .slider img, html body main .slider img {
+    width: 100%;
+  }
+  * body main .cards, html body main .cards {
+    flex-flow: column wrap;
+  }
+  * body #not-found-404 .not-found__text .btn, html body #not-found-404 .not-found__text .btn {
+    width: 100%;
+  }
+  * body #not-found-404 img, html body #not-found-404 img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  * .header__items, html .header__items {
+    display: none;
+  }
+  * #grid-content, html #grid-content {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    align-items: center;
+  }
+  * .work-section__item, html .work-section__item {
+    width: 100% !important;
+  }
+  .btn {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  * body .main-section__card, html body .main-section__card {
+    width: 80% !important;
+  }
+  * body .presentation-section__title--text_Primary, html body .presentation-section__title--text_Primary {
+    text-align: center;
+  }
+  * body .btn, html body .btn {
+    width: 40% !important;
+  }
+  * body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
+    margin: 0;
+    min-height: 600px;
+  }
+  * body .contain .content-cards, * body .contact_section .content-cards, html body .contain .content-cards, html body .contact_section .content-cards {
+    align-items: center;
+  }
+  * body .contain .slider img, * body .contact_section .slider img, html body .contain .slider img, html body .contact_section .slider img {
+    height: 330px;
+  }
+  * body .text, html body .text {
+    margin: 0;
+  }
+  * body .help_section__item, html body .help_section__item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80% !important;
+  }
+  * body .contain, * body .contact_section, * html body .contact_section, html * body .contact_section, html body .contain, html body .contact_section {
+    width: 100%;
+    margin: 0;
+  }
+  * body .contact_section__item--bg, html body .contact_section__item--bg {
+    width: 100% !important;
+  }
+  * body .contact_section__item--bg .shop-iframe, html body .contact_section__item--bg .shop-iframe {
+    flex-direction: column;
+  }
+  * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
+    width: 250px !important;
+    height: 180px !important;
+  }
+  * body footer .footer-section, html body footer .footer-section {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  * body .publ-section .publ-section__align .publ-section__align--text, html body .publ-section .publ-section__align .publ-section__align--text {
+    letter-spacing: 0.1rem;
+    word-spacing: 0rem;
+  }
+  * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
+    width: 210px !important;
+    height: 135px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  * body .main-section__card, html body .main-section__card {
+    width: 95% !important;
+  }
+  * body .btn, html body .btn {
+    width: 45% !important;
+  }
+  * body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
+    width: 100% !important;
+  }
+  * body .contain__main--help, html body .contain__main--help {
+    width: 100% !important;
+    height: 600px !important;
+  }
+  * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.bg-dark {
+  background-color: rgba(34, 38, 42, 0.9) !important;
+}
+
+/*Colors*/
+/*Medidas*/
+/*MIXINS*/
+/*Responsive*/
+@media only screen and (max-width: 1280px) {
+  * footer .logoRedes, html footer .logoRedes {
+    justify-content: space-evenly;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  * body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
+    margin-bottom: 50px;
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 962px) {
+  * .contain, * body .contact_section, * html body .contact_section, html body * .contact_section, html .contain, * body html .contact_section, html body .contact_section {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 962px) {
+  .contact_section__item--bg {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contain__cards {
+    max-width: 700px;
+  }
+  .contain__cards--img_heigth {
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  * body .header, html body .header {
+    width: 100%;
+  }
+  * body #grid-content, html body #grid-content {
+    grid-template-rows: .7fr .7fr;
+  }
+  * body .content--contact, html body .content--contact {
+    margin: 10rem 0 10rem 0;
+  }
+  * body .main-section__card, html body .main-section__card {
+    width: 60% !important;
+  }
+  * body .contact_section__item, html body .contact_section__item {
+    justify-content: flex-start;
+  }
+  * body .contact_section__item--bg, html body .contact_section__item--bg {
+    width: 85vw !important;
+  }
+  * body main .slider img, html body main .slider img {
+    width: 100%;
+  }
+  * body main .cards, html body main .cards {
+    flex-flow: column wrap;
+  }
+  * body #not-found-404 .not-found__text .btn, html body #not-found-404 .not-found__text .btn {
+    width: 100%;
+  }
+  * body #not-found-404 img, html body #not-found-404 img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  * .header__items, html .header__items {
+    display: none;
+  }
+  * #grid-content, html #grid-content {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    align-items: center;
+  }
+  * .work-section__item, html .work-section__item {
+    width: 100% !important;
+  }
+  .btn {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  * body .main-section__card, html body .main-section__card {
+    width: 80% !important;
+  }
+  * body .presentation-section__title--text_Primary, html body .presentation-section__title--text_Primary {
+    text-align: center;
+  }
+  * body .btn, html body .btn {
+    width: 40% !important;
+  }
+  * body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
+    margin: 0;
+    min-height: 600px;
+  }
+  * body .contain .content-cards, * body .contact_section .content-cards, html body .contain .content-cards, html body .contact_section .content-cards {
+    align-items: center;
+  }
+  * body .contain .slider img, * body .contact_section .slider img, html body .contain .slider img, html body .contact_section .slider img {
+    height: 330px;
+  }
+  * body .text, html body .text {
+    margin: 0;
+  }
+  * body .help_section__item, html body .help_section__item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80% !important;
+  }
+  * body .contain, * body .contact_section, * html body .contact_section, html * body .contact_section, html body .contain, html body .contact_section {
+    width: 100%;
+    margin: 0;
+  }
+  * body .contact_section__item--bg, html body .contact_section__item--bg {
+    width: 100% !important;
+  }
+  * body .contact_section__item--bg .shop-iframe, html body .contact_section__item--bg .shop-iframe {
+    flex-direction: column;
+  }
+  * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
+    width: 250px !important;
+    height: 180px !important;
+  }
+  * body footer .footer-section, html body footer .footer-section {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  * body .publ-section .publ-section__align .publ-section__align--text, html body .publ-section .publ-section__align .publ-section__align--text {
+    letter-spacing: 0.1rem;
+    word-spacing: 0rem;
+  }
+  * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
+    width: 210px !important;
+    height: 135px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  * body .main-section__card, html body .main-section__card {
+    width: 95% !important;
+  }
+  * body .btn, html body .btn {
+    width: 45% !important;
+  }
+  * body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
+    width: 100% !important;
+  }
+  * body .contain__main--help, html body .contain__main--help {
+    width: 100% !important;
+    height: 600px !important;
+  }
+  * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+/* Estilos footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 251px;
+  background-color: rgba(34, 38, 42, 0.9);
+}
+
+footer .footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+footer .footer-section__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10rem;
+}
+
+footer .footer-section__contact--redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+}
+
+footer .footer-section__contact--redes img {
+  width: 20px;
+  height: 20px;
+  margin-left: 1rem;
+}
+
+footer .footer-section__contact--redes img:hover {
+  transition: 300ms all;
+  transform: scale(1.2, 1.2);
+}
+
+footer .footer-section__contact--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10rem;
+}
+
+footer .footer-section__contact--form .btn {
+  width: 100% !important;
+}
+
+footer p {
+  font-weight: bold;
+  color: #ccc;
+}
+
+/*Colors*/
+/*Medidas*/
+/*MIXINS*/
+/*Responsive*/
+@media only screen and (max-width: 1280px) {
+  * footer .logoRedes, html footer .logoRedes {
+    justify-content: space-evenly;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  * body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
+    margin-bottom: 50px;
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 962px) {
+  * .contain, * body .contact_section, * html body .contact_section, html body * .contact_section, html .contain, * body html .contact_section, html body .contact_section {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 962px) {
+  .contact_section__item--bg {
+    width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contain__cards {
+    max-width: 700px;
+  }
+  .contain__cards--img_heigth {
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  * body .header, html body .header {
+    width: 100%;
+  }
+  * body #grid-content, html body #grid-content {
+    grid-template-rows: .7fr .7fr;
+  }
+  * body .content--contact, html body .content--contact {
+    margin: 10rem 0 10rem 0;
+  }
+  * body .main-section__card, html body .main-section__card {
+    width: 60% !important;
+  }
+  * body .contact_section__item, html body .contact_section__item {
+    justify-content: flex-start;
+  }
+  * body .contact_section__item--bg, html body .contact_section__item--bg {
+    width: 85vw !important;
+  }
+  * body main .slider img, html body main .slider img {
+    width: 100%;
+  }
+  * body main .cards, html body main .cards {
+    flex-flow: column wrap;
+  }
+  * body #not-found-404 .not-found__text .btn, html body #not-found-404 .not-found__text .btn {
+    width: 100%;
+  }
+  * body #not-found-404 img, html body #not-found-404 img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  * .header__items, html .header__items {
+    display: none;
+  }
+  * #grid-content, html #grid-content {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    align-items: center;
+  }
+  * .work-section__item, html .work-section__item {
+    width: 100% !important;
+  }
+  .btn {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  * body .main-section__card, html body .main-section__card {
+    width: 80% !important;
+  }
+  * body .presentation-section__title--text_Primary, html body .presentation-section__title--text_Primary {
+    text-align: center;
+  }
+  * body .btn, html body .btn {
+    width: 40% !important;
+  }
+  * body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
+    margin: 0;
+    min-height: 600px;
+  }
+  * body .contain .content-cards, * body .contact_section .content-cards, html body .contain .content-cards, html body .contact_section .content-cards {
+    align-items: center;
+  }
+  * body .contain .slider img, * body .contact_section .slider img, html body .contain .slider img, html body .contact_section .slider img {
+    height: 330px;
+  }
+  * body .text, html body .text {
+    margin: 0;
+  }
+  * body .help_section__item, html body .help_section__item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80% !important;
+  }
+  * body .contain, * body .contact_section, * html body .contact_section, html * body .contact_section, html body .contain, html body .contact_section {
+    width: 100%;
+    margin: 0;
+  }
+  * body .contact_section__item--bg, html body .contact_section__item--bg {
+    width: 100% !important;
+  }
+  * body .contact_section__item--bg .shop-iframe, html body .contact_section__item--bg .shop-iframe {
+    flex-direction: column;
+  }
+  * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
+    width: 250px !important;
+    height: 180px !important;
+  }
+  * body footer .footer-section, html body footer .footer-section {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  * body .publ-section .publ-section__align .publ-section__align--text, html body .publ-section .publ-section__align .publ-section__align--text {
+    letter-spacing: 0.1rem;
+    word-spacing: 0rem;
+  }
+  * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
+    width: 210px !important;
+    height: 135px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  * body .main-section__card, html body .main-section__card {
+    width: 95% !important;
+  }
+  * body .btn, html body .btn {
+    width: 45% !important;
+  }
+  * body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
+    width: 100% !important;
+  }
+  * body .contain__main--help, html body .contain__main--help {
+    width: 100% !important;
+    height: 600px !important;
+  }
+  * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+*, html {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+* body, html body {
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url(../img/bg2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  line-height: 1.6;
+  /*Not found page*/
+  /* Clases e IDs de los main*/
+  /* Text format BEM*/
+  /* Seccion de nuestro trabajo BEM*/
+  /* Seccion ayuda BEM*/
+  /* Seccion contacto BEM*/
+}
+
+* body #not-found-404, html body #not-found-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3cecabad;
+  border-radius: 3px;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+* body #not-found-404 .not-found__text, html body #not-found-404 .not-found__text {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+* body #not-found-404 .not-found__text h1, html body #not-found-404 .not-found__text h1 {
+  color: rgba(184, 134, 69, 0.9);
+  font-weight: bold;
+}
+
+* body #not-found-404 .not-found__text h3, html body #not-found-404 .not-found__text h3 {
+  color: #444;
+}
+
+* body .main-section, html body .main-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/MI-bg.png");
+  min-height: 610px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* body .main-section__card, html body .main-section__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(184, 134, 69, 0.9);
+  border-radius: 5px;
+  width: 30%;
+  height: 250px;
+}
+
+* body .main-section__card--text, html body .main-section__card--text {
+  text-align: center;
+  line-height: 3rem;
+}
+
+* body .main-section__card--text span, html body .main-section__card--text span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ccc;
+}
+
+* body .main-section__card--text h1, html body .main-section__card--text h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+* body .btn, html body .btn {
+  width: 30%;
+}
+
+* body .publ-section, html body .publ-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(184, 134, 69, 0.9);
+  height: 44px;
+}
+
+* body .publ-section__align, html body .publ-section__align {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+* body .publ-section__align--text, html body .publ-section__align--text {
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.6rem;
+}
+
+* body .presentation-section, html body .presentation-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 1020px;
+}
+
+* body .presentation-section__title, html body .presentation-section__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+* body .presentation-section__title--text, html body .presentation-section__title--text {
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+* body .presentation-section__title--text_Primary, html body .presentation-section__title--text_Primary {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+* body .contain, * body .contact_section, * html body .contact_section, html * body .contact_section, html body .contain, html body .contact_section {
+  display: flex;
+  flex-direction: column;
+  min-height: 575px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+* body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
+  background-color: rgba(184, 134, 69, 0.9) !important;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 40%;
+  min-height: 320px;
+}
+
+* body .contain__main--text, html body .contain__main--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+* body .contain__main--text h2, * body .contain__main--text p, * body .contain__main--text strong, * body .contain__main--text span, * body .contain__main--text form, html body .contain__main--text h2, html body .contain__main--text p, html body .contain__main--text strong, html body .contain__main--text span, html body .contain__main--text form {
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  line-height: 2rem;
+  width: 60%;
+}
+
+* body .contain__main #video, * body .help_section__item #video, html body .contain__main #video, html body .help_section__item #video {
+  display: flex;
+  justify-content: center;
+}
+
+* body .contain__main #video video, * body .help_section__item #video video, html body .contain__main #video video, html body .help_section__item #video video {
+  width: 97%;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+* body .contain__cards, html body .contain__cards {
+  max-width: 700px;
+  margin-bottom: 3.5rem !important;
+}
+
+* body .contain__cards--img_heigth, html body .contain__cards--img_heigth {
+  max-width: 100%;
+  height: 176px;
+}
+
+* body .content-cards, html body .content-cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem !important;
+}
+
+* body .text, html body .text {
+  display: flex;
+  flex-direction: column;
+}
+
+* body .text__content, html body .text__content {
+  margin-left: 10px;
+}
+
+* body .text__content--title h3, * body .text__content--title h2, * body .text__content--title h1, html body .text__content--title h3, html body .text__content--title h2, html body .text__content--title h1 {
+  color: #ccc;
+  font-weight: bold;
+  padding: 10px;
+}
+
+* body .container-main, html body .container-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 575px;
+  width: 100%;
+}
+
+* body .bg-MI, html body .bg-MI {
+  background-color: rgba(184, 134, 69, 0.9);
+}
+
+* body .work-section, html body .work-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+* body .work-section__item, html body .work-section__item {
+  background-color: rgba(184, 134, 69, 0.9);
+  width: 50%;
+  border-radius: 3px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+* body .work-section__item--text h1, * body .work-section__item--text h2, * body .work-section__item--text h3, html body .work-section__item--text h1, html body .work-section__item--text h2, html body .work-section__item--text h3 {
+  font-weight: bold;
+  color: black;
+}
+
+* body .work-section__item--text p, html body .work-section__item--text p {
+  color: #ccc;
+}
+
+* body .bg-hs, html body .bg-hs {
+  background-color: #444;
+  border-radius: 3px;
+  width: 60%;
+}
+
+* body .bg-hsa, html body .bg-hsa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+* body .bg-hsa p, html body .bg-hsa p {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+
+* body .help_section, html body .help_section {
+  display: flex;
+  flex-direction: column;
+  min-height: 575px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 1220px;
+  margin-top: 5rem;
+}
+
+* body .help_section__item, html body .help_section__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  min-height: 1080px;
+}
+
+* body .help_section__item--text, html body .help_section__item--text {
+  text-align: center;
+}
+
+* body .help_section__item--text h1, html body .help_section__item--text h1 {
+  font-weight: bold;
+}
+
+* body .help_section__item--text h2, html body .help_section__item--text h2 {
+  color: #ccc;
+}
+
+* body .contact_section, html body .contact_section {
+  margin-top: 5rem;
+}
+
+* body .contact_section__item, html body .contact_section__item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+* body .contact_section__item--bg, html body .contact_section__item--bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(184, 134, 69, 0.9);
+  border-radius: 3px;
+  width: 55%;
+  padding: 3rem;
+}
+
+* body .contact_section__item--bg h2, html body .contact_section__item--bg h2 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+
+* body .contact_section__item--bg span, html body .contact_section__item--bg span {
+  color: #ccc;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+* body .contact_section__item--bg .shop-iframe, html body .contact_section__item--bg .shop-iframe {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+* body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
+  width: 300px;
+  height: 280px;
+}
+
+* body .content, html body .content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+* body .content__contact, html body .content__contact {
+  width: 60%;
+}
+
+* body .content__contact--padding, html body .content__contact--padding {
+  padding: 5rem;
+}
+
+* body .accordion, html body .accordion {
+  width: 70%;
+  margin: 0 auto;
+}
+
+* body .accordion-body, html body .accordion-body {
+  color: #888585;
+}
+
+* body #content-form, html body #content-form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+
+* body form > label, * body h5, html body form > label, html body h5 {
+  font-family: Helvetica, bold;
+  color: black;
+}
+
+* body form input, * body select, html body form input, html body select {
+  padding: 3px;
+  margin: 5px;
+}
+
+/*Colors*/
+/*Medidas*/
+/*MIXINS*/
+html, body {
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -13,16 +13,10 @@
 @media only screen and (max-width: 1210px){
     *, html {
         body{
-            #grid-content{
-                display: grid;
-                grid-template-rows: .9fr .9fr;
-                grid-template-columns: 1fr;
-                align-items: center;
-            }
             .contain{
                 &__main{
                     margin-bottom: 50px;
-                    width: 90%;
+                    width: 90% !important;
                 }
             }
         }
@@ -71,6 +65,11 @@
             .content{
                 &--contact{
                     margin: 10rem 0 10rem 0;
+                }
+            }
+            .main-section{
+                &__card{
+                    width: 60% !important;
                 }
             }
             .contact_section{
@@ -133,12 +132,27 @@
 @media only screen and (max-width: 425px){
     *, html{
         body{
+            .main-section{
+                &__card{
+                    width: 80% !important;
+                }
+            }
+            .presentation-section{
+                &__title{
+                    &--text_Primary{
+                        text-align: center;
+                    }
+                }
+            }
+            .btn{
+                width: 40% !important;
+            }
             .contain{
                 &__main{
                     margin: 0;
                     min-height: 600px;
                 }
-            
+                
                 .content-cards{
                     align-items: center;
                 }
@@ -155,7 +169,7 @@
                 &__item{
                     margin-top: 20px;
                     margin-bottom: 20px;
-                    width: 87% !important;
+                    width: 80% !important;
                 }
             }
             .contain{
@@ -166,9 +180,49 @@
                 &__item{
                     &--bg{
                         width: 100% !important;
+                        .shop-iframe{
+                            flex-direction: column;
+                            iframe{
+                                width: 250px !important;
+                                height: 180px !important;
+                            }
+                        }
                     }
                 }
             }
+
+            footer{
+                .footer-section{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    *, html{
+        body{
+            .publ-section{
+                .publ-section__align{
+                    .publ-section__align--text{
+                        letter-spacing: 0.1rem;
+                        word-spacing: 0rem;
+                    }
+                }
+            }
+            .contact_section{
+                &__item{
+                    &--bg{
+                        .shop-iframe{
+                            iframe{
+                                width: 210px !important;
+                                height: 135px !important;
+                            }
+                        }
+                    }
+                }
+            } 
         }
     }
 }
@@ -176,6 +230,14 @@
 @media only screen and (max-width: 320px){
     *, html {
         body {
+            .main-section{
+                &__card{
+                    width: 95% !important;
+                }
+            }
+            .btn{
+                width: 45% !important;
+            }
             .contain{
                 &__main{
                     width: 100% !important;
@@ -185,6 +247,18 @@
                     }
                 }
             }
+            .contact_section{
+                &__item{
+                    &--bg{
+                        .shop-iframe{
+                            iframe{
+                                width: 150px !important;
+                                height: 150px !important;
+                            }
+                        }
+                    }
+                }
+            } 
         }
     }
 }
