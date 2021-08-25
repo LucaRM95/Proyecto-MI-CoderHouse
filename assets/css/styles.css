@@ -984,6 +984,10 @@ footer p {
   background-image: url("../img/products-bg.png");
 }
 
+* body #work-section, html body #work-section {
+  background-image: url("../img/our-work.png");
+}
+
 * body #shop-section, html body #shop-section {
   background-image: url("../img/shop-bg.png");
 }
