@@ -1248,7 +1248,7 @@ footer p {
   align-items: center;
   justify-content: space-evenly;
   width: 50%;
-  min-height: 800px;
+  min-height: 940px;
 }
 
 * body .help_section__item--text, html body .help_section__item--text {
