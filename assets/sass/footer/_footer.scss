@@ -6,6 +6,7 @@ footer{
     @include display(flex, column, space-evenly, center);
     min-height: 251px;
     background-color: rgba(34, 38, 42, 0.9);
+    margin-top: 4rem;
     .footer-section{
         @include display(flex, row, space-evenly, center);
         width: 100%;

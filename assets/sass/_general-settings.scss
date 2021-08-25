@@ -1,11 +1,16 @@
 /*Colors*/
 $MI-color-primary: rgba(184, 134, 69, 0.9);
+$MI-color-primary-nt: rgb(184, 134, 69);
 $MI_color_secondary: white;
 $MI_color_secondary_hover: #ccc;
 $color_gradient: rgba(47, 23, 15, 0.65);
 $color_gradient_header: #3cecabad;
 $color_gradient_header_second: #ee72e1ad;
 
+$color_white: #fff;
+$color_prime: #5ad67d;
+$color_grey: #e2e2e2;
+$color_grey_dark: #a2a2a2;
 
 /*Medidas*/
 $min_height: 500px;
@@ -28,4 +33,11 @@ $general_height: 200px;
     justify-content: $justify;
     align-items: $align;
 }
+
+/*PEN STYLES*/
+  
+$color_white: #fff;
+$color_prime: #5ad67d;
+$color_grey: #e2e2e2;
+$color_grey_dark: #a2a2a2;
 

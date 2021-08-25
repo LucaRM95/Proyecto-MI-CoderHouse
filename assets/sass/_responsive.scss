@@ -1,4 +1,12 @@
 /*Responsive*/
+@media only screen and (max-width: 1440px){
+    .contain{
+        &__cards{
+            width: 18rem !important;
+        }
+    }
+}
+
 @media only screen and (max-width: 1280px){
     *, html{
         footer{
@@ -17,6 +25,18 @@
                 &__main{
                     margin-bottom: 50px;
                     width: 90% !important;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    *, html{
+        body{
+            .contain{
+                &__products{
+                    width: 70% !important; 
                 }
             }
         }
@@ -67,6 +87,7 @@
                     margin: 10rem 0 10rem 0;
                 }
             }
+
             .main-section{
                 &__card{
                     width: 60% !important;
@@ -101,9 +122,50 @@
                     width: 100%;
                 }
             }
+            .contain{
+                &__products{
+                    width: 100% !important;
+                }
+            }
         }
     }
 }
+
+@media (min-width: 640px) {
+    // flex-direction: row;
+    // max-width: 700px;
+    .meta {
+      flex-basis: 40%;
+      height: auto;
+    }
+    .description {
+      flex-basis: 60%;
+      &:before {
+        transform: skewX(-3deg);
+        content: "";
+        background: #fff;
+        width: 30px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+    &.alt {
+      flex-direction: row-reverse;
+      .description {
+        &:before {
+          left: inherit;
+          right: -10px;
+          transform: skew(3deg)
+        }
+      }
+      .details {
+        padding-left: 25px;
+      }
+    }
+  }
 
 @media only screen and (max-width: 560px){
     *, html {
@@ -161,6 +223,12 @@
                         height: 330px;
                     }
                 }
+                &__products{
+                    grid-template-columns: repeat(1, 1fr) !important;
+                    .btn{
+                        width: 43% !important;
+                    }
+                }
             }
             .text{
                 margin: 0;
@@ -199,6 +267,90 @@
         }
     }
 }
+
+@media (max-width: 639px){
+    *, html{
+        body{
+            .blog-card{
+                width: 80%;
+            }
+        }
+    }
+  }
+  
+  @media (max-width: 375px){
+      *, html{
+          body{
+            .blog-card{
+                width: 85%;
+            }
+          }
+      }
+  }
+
+  @media (max-width: 320px){
+    *, html{
+        body{
+            .blog-card{
+                width: 90%;
+            }
+        }
+    }
+  }
+
+  @media (max-width: 1024px){
+      *, html{
+          body{
+              .grid-products{
+                  grid-template-columns: 1fr;
+              }
+          }
+      }
+  }
+
+  @media (min-width: 640px) {
+    *, html{
+        body{
+            .blog-card{
+                flex-direction: row;
+                max-width: 80%;
+                min-height: 325px;
+                .meta {
+                    flex-basis: 40%;
+                    height: auto;
+                }
+                .description {
+                    flex-basis: 60%;
+                    &:before {
+                        transform: skewX(-3deg);
+                        content: "";
+                        background: $MI-color-primary-nt;
+                        width: 30px;
+                        position: absolute;
+                        left: -10px;
+                        top: 0;
+                        bottom: 0;
+                        z-index: -1;
+                    }
+                }
+                &.alt {
+                    flex-direction: row-reverse;
+                    .description {
+                      &:before {
+                        left: inherit;
+                        right: -10px;
+                        transform: skew(3deg)
+                      }
+                    }
+                    .details {
+                      padding-left: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media only screen and (max-width: 375px){
     *, html{

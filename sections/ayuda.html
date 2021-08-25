@@ -22,39 +22,46 @@
 </head>
 <body>
   <!-- Seccion header -->
-  <header class="main-header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand animate__animated animate__fadeInLeft" href="../index.html">
-                <img src="../assets/img/Logo-MI.png" alt="" width="35" height="35" class="d-inline-block align-text-top">
-                Mala Influencia
-              </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                <a class="nav-link" href="./nuestro-trabajo.html">Nuestro trabajo</a>
-                <a class="nav-link" href="./tiendas.html">Tiendas</a>
-                <a class="nav-link" href="./ayuda.html">Ayuda</a>
-                <a class="nav-link" href="./productos.html">Productos</a>
-            </div>
-            </div>
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand animate__animated animate__fadeInLeft" href="../index.html">
+            <img src="../assets/img/Logo-MI.png" alt="" width="35" height="35" class="d-inline-block align-text-top">
+            Mala Influencia
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="./nuestro-trabajo.html">Nuestro trabajo</a>
+            <a class="nav-link" href="./productos.html">Productos</a>
+            <a class="nav-link" href="./tiendas.html">Tiendas</a>
+            <a class="nav-link" href="./ayuda.html">Ayuda</a>
         </div>
-    </nav>
+        </div>
+    </div>
 </header>
+
+<section id="help-section" class="main-section">
+  <div class="main-section__card animate__animated animate__fadeInLeft">
+      <div class="main-section__card--text">
+          <span>Preguntas</span>
+          <h1>Frecuentes</h1>
+      </div>
+  </div>
+</section>
+
+<section class="publ-section">
+  <div class="publ-section__align">
+      <span class="publ-section__align--text animate__animated animate__fadeInLeft">Ante cualquier duda contactanos</sapn>
+  </div>
+</section>
 
   <section class="help_section">
     
     <div class="help_section__item">
 
-      <div class="help_section__item--text bg-hs">
-        <h2>Preguntas </h2>
-        <h1>Frecuentes</h1>
-      </div>
-
-      <div class="animate__animated animate__fadeInLeft accordion" id="accordionExample">
+      <div class="accordion" id="accordionExample" data-aos="zoom-in">
         <div class="bg-hsa">
           <p>Pagos</p> 
         </div>
@@ -96,7 +103,7 @@
         </div>
       </div>
 
-      <div class=" animate__animated animate__fadeInLeft accordion accordion-flush" id="accordionFlushExample">
+      <div class=" accordion accordion-flush" id="accordionFlushExample" data-aos="zoom-in">
         <div class="bg-hsa">
           <p>Envíos y retiro</p> 
         </div>
