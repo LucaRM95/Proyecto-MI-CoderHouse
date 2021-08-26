@@ -268,7 +268,7 @@
     }
 }
 
-@media (max-width: 639px){
+@media only screen and (max-width: 639px){
     *, html{
         body{
             .blog-card{
@@ -278,7 +278,7 @@
     }
   }
   
-  @media (max-width: 375px){
+  @media only screen and (max-width: 375px){
       *, html{
           body{
             .blog-card{
@@ -288,7 +288,7 @@
       }
   }
 
-  @media (max-width: 320px){
+  @media only screen and (max-width: 320px){
     *, html{
         body{
             .blog-card{
@@ -298,7 +298,7 @@
     }
   }
 
-  @media (max-width: 1024px){
+  @media only screen and (max-width: 1024px){
       *, html{
           body{
               .grid-products{
@@ -308,12 +308,12 @@
       }
   }
 
-  @media (min-width: 640px) {
+  @media only screen and (min-width: 640px) {
     *, html{
         body{
             .blog-card{
                 flex-direction: row;
-                max-width: 80%;
+                max-width: 90%;
                 min-height: 325px;
                 .meta {
                     flex-basis: 40%;

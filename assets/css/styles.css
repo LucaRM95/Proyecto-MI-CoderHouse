@@ -190,34 +190,34 @@
   }
 }
 
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   * body .blog-card, html body .blog-card {
     width: 80%;
   }
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   * body .blog-card, html body .blog-card {
     width: 85%;
   }
 }
 
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   * body .blog-card, html body .blog-card {
     width: 90%;
   }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   * body .grid-products, html body .grid-products {
     grid-template-columns: 1fr;
   }
 }
 
-@media (min-width: 640px) {
+@media only screen and (min-width: 640px) {
   * body .blog-card, html body .blog-card {
     flex-direction: row;
-    max-width: 80%;
+    max-width: 90% !important;
     min-height: 325px;
   }
   * body .blog-card .meta, html body .blog-card .meta {
@@ -484,34 +484,34 @@
   }
 }
 
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   * body .blog-card, html body .blog-card {
     width: 80%;
   }
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   * body .blog-card, html body .blog-card {
     width: 85%;
   }
 }
 
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   * body .blog-card, html body .blog-card {
     width: 90%;
   }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   * body .grid-products, html body .grid-products {
     grid-template-columns: 1fr;
   }
 }
 
-@media (min-width: 640px) {
+@media only screen and (min-width: 640px) {
   * body .blog-card, html body .blog-card {
     flex-direction: row;
-    max-width: 80%;
+    max-width: 90% !important;
     min-height: 325px;
   }
   * body .blog-card .meta, html body .blog-card .meta {
@@ -831,34 +831,34 @@ footer p {
   }
 }
 
-@media (max-width: 639px) {
+@media only screen and (max-width: 639px) {
   * body .blog-card, html body .blog-card {
     width: 80%;
   }
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   * body .blog-card, html body .blog-card {
     width: 85%;
   }
 }
 
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   * body .blog-card, html body .blog-card {
     width: 90%;
   }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   * body .grid-products, html body .grid-products {
     grid-template-columns: 1fr;
   }
 }
 
-@media (min-width: 640px) {
+@media only screen and (min-width: 640px) {
   * body .blog-card, html body .blog-card {
     flex-direction: row;
-    max-width: 80%;
+    max-width: 90% !important;
     min-height: 325px;
   }
   * body .blog-card .meta, html body .blog-card .meta {
