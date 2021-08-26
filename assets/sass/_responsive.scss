@@ -34,9 +34,25 @@
 @media only screen and (max-width: 1024px){
     *, html{
         body{
+            .grid-products{
+                grid-template-columns: 1fr;
+            }
+            .presentation-section{
+                &__title{
+                    width: 96% !important;
+                }
+            }
             .contain{
                 &__products{
                     width: 70% !important; 
+                }
+            }
+            .search-bar{
+                input[type="text"]{
+                    width: 60% !important;
+                }
+                input[type="button"]{
+                    width: 7% !important;
                 }
             }
         }
@@ -87,7 +103,11 @@
                     margin: 10rem 0 10rem 0;
                 }
             }
-
+            .search-bar{
+                input[type="button"]{
+                    width: 10% !important;
+                }
+            }
             .main-section{
                 &__card{
                     width: 60% !important;
@@ -131,41 +151,58 @@
     }
 }
 
-@media (min-width: 640px) {
-    // flex-direction: row;
-    // max-width: 700px;
-    .meta {
-      flex-basis: 40%;
-      height: auto;
-    }
-    .description {
-      flex-basis: 60%;
-      &:before {
-        transform: skewX(-3deg);
-        content: "";
-        background: #fff;
-        width: 30px;
-        position: absolute;
-        left: -10px;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-      }
-    }
-    &.alt {
-      flex-direction: row-reverse;
-      .description {
-        &:before {
-          left: inherit;
-          right: -10px;
-          transform: skew(3deg)
+@media only screen and (min-width: 640px) {
+    *, html{
+        body{
+            .blog-card{
+                flex-direction: row;
+                max-width: 90%;
+                min-height: 325px;
+                .meta {
+                    flex-basis: 40%;
+                    height: auto;
+                }
+                .description {
+                    flex-basis: 60%;
+                    &:before {
+                        transform: skewX(-3deg);
+                        content: "";
+                        background: $MI-color-primary-nt;
+                        width: 30px;
+                        position: absolute;
+                        left: -10px;
+                        top: 0;
+                        bottom: 0;
+                        z-index: -1;
+                    }
+                }
+                &.alt {
+                    flex-direction: row-reverse;
+                    .description {
+                      &:before {
+                        left: inherit;
+                        right: -10px;
+                        transform: skew(3deg)
+                      }
+                    }
+                    .details {
+                      padding-left: 25px;
+                    }
+                }
+            }
         }
-      }
-      .details {
-        padding-left: 25px;
-      }
     }
-  }
+}
+
+@media only screen and (max-width: 639px){
+*, html{
+    body{
+        .blog-card{
+            width: 80%;
+        }
+    }
+}
+}
 
 @media only screen and (max-width: 560px){
     *, html {
@@ -201,6 +238,20 @@
             }
             .presentation-section{
                 &__title{
+                    margin-top: 1rem !important;
+                }
+            }
+            .search-bar{
+                input[type="text"]{
+                    width: 55% !important;
+                }
+                input[type="button"]{
+                    width: 18% !important;
+                }
+            }
+
+            .presentation-section{
+                &__title{
                     &--text_Primary{
                         text-align: center;
                     }
@@ -212,7 +263,7 @@
             .contain{
                 &__main{
                     margin: 0;
-                    min-height: 600px;
+                    min-height: 690px;
                 }
                 
                 .content-cards{
@@ -268,93 +319,12 @@
     }
 }
 
-@media only screen and (max-width: 639px){
-    *, html{
-        body{
-            .blog-card{
-                width: 80%;
-            }
-        }
-    }
-  }
-  
-  @media only screen and (max-width: 375px){
-      *, html{
-          body{
-            .blog-card{
-                width: 85%;
-            }
-          }
-      }
-  }
-
-  @media only screen and (max-width: 320px){
-    *, html{
-        body{
-            .blog-card{
-                width: 90%;
-            }
-        }
-    }
-  }
-
-  @media only screen and (max-width: 1024px){
-      *, html{
-          body{
-              .grid-products{
-                  grid-template-columns: 1fr;
-              }
-          }
-      }
-  }
-
-  @media only screen and (min-width: 640px) {
-    *, html{
-        body{
-            .blog-card{
-                flex-direction: row;
-                max-width: 90%;
-                min-height: 325px;
-                .meta {
-                    flex-basis: 40%;
-                    height: auto;
-                }
-                .description {
-                    flex-basis: 60%;
-                    &:before {
-                        transform: skewX(-3deg);
-                        content: "";
-                        background: $MI-color-primary-nt;
-                        width: 30px;
-                        position: absolute;
-                        left: -10px;
-                        top: 0;
-                        bottom: 0;
-                        z-index: -1;
-                    }
-                }
-                &.alt {
-                    flex-direction: row-reverse;
-                    .description {
-                      &:before {
-                        left: inherit;
-                        right: -10px;
-                        transform: skew(3deg)
-                      }
-                    }
-                    .details {
-                      padding-left: 25px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
 @media only screen and (max-width: 375px){
     *, html{
         body{
+            .blog-card{
+                width: 85%;
+            }
             .publ-section{
                 .publ-section__align{
                     .publ-section__align--text{
@@ -382,6 +352,17 @@
 @media only screen and (max-width: 320px){
     *, html {
         body {
+            .blog-card{
+                width: 90%;
+            }
+            .search-bar{
+                input[type="text"]{
+                    width: 68% !important; 
+                }
+                input[type="button"]{
+                    width: 22% !important;
+                }
+            }
             .main-section{
                 &__card{
                     width: 95% !important;

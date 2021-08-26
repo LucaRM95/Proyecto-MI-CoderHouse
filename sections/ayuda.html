@@ -40,38 +40,43 @@
         </div>
         </div>
     </div>
-</header>
+  </header>
 
-<section id="help-section" class="main-section">
-  <div class="main-section__card animate__animated animate__fadeInLeft">
-      <div class="main-section__card--text">
-          <span>Preguntas</span>
-          <h1>Frecuentes</h1>
-      </div>
-  </div>
-</section>
+  <section id="help-section" class="main-section">
+    <div class="main-section__card animate__animated animate__fadeInLeft">
+        <div class="main-section__card--text">
+            <span>Preguntas</span>
+            <h1>Frecuentes</h1>
+        </div>
+    </div>
+  </section>
 
-<section class="publ-section">
-  <div class="publ-section__align">
-      <span class="publ-section__align--text animate__animated animate__fadeInLeft">Cualquier duda contactanos</span>
-  </div>
-</section>
+  <section class="publ-section">
+    <div class="publ-section__align">
+        <span class="publ-section__align--text animate__animated animate__fadeInLeft">Cualquier duda contactanos</span>
+    </div>
+  </section>
+
+  <section class="search-bar animate__animated animate__zoomIn">
+    <input type="text" name="search" id="search" placeholder="Escribe aquí tu pregunta">
+    <input type="button" value="Buscar" class="btn btn-success">
+  </section>
 
   <section class="help_section">
     
     <div class="help_section__item">
 
-      <div class="accordion" id="accordionExample" data-aos="zoom-in">
+      <div class="accordion mt-5 mb-5" id="accordionExample" data-aos="zoom-in">
         <div class="bg-hsa">
           <p>Pagos</p> 
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
               ¿Cuales son los métodos de pago?
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               Los métodos de pago que aceptamos actualmente son en efectivo, transferencia bancaria o débito. Próximamente estaremos aceptando tarjetas de crédito visa y MasterCard.
             </div>
@@ -103,7 +108,7 @@
         </div>
       </div>
 
-      <div class=" accordion accordion-flush" id="accordionFlushExample" data-aos="zoom-in">
+      <div class=" accordion accordion-flush mb-5" id="accordionFlushExample" data-aos="zoom-in">
         <div class="bg-hsa">
           <p>Envíos y retiro</p> 
         </div>
@@ -146,8 +151,52 @@
         
       </div>
 
+      <div class=" accordion accordion-flush mb-5" id="accordionFlushExample" data-aos="zoom-in">
+        <div class="bg-hsa">
+          <p>Sobre nuestros Productos</p> 
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              ¿Cuanto tiempo tardan en hacer el producto?
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Los tiempos varían segun la calidad del producto y el tipo del mismo. Tambien influye el tamaño y la cantidad de estampados. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              ¿Es buena la calidad de la ropa?
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Claro que sí, nuestra indumentaria se trabaja con la mejor calidad para que nuestros clientes disfruten de la misma por mucho tiempo!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              ¿Hay tiempo para los productos en stock?
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              No, los productos en stock ya estan previamente elaborados por lo que no hay una espera por ellos, solo se acuerda el punto o método de entrega y a lucir como todo un Mala Influencia!
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
     </div> 
   </section>
+
   <footer style="color: white;">
     <div class="footer-section">
         <div class="footer-section__contact" data-aos="zoom-in">
@@ -180,7 +229,7 @@
         </div>
     </div>
     <p>Developed by &copy;LucaRM Design - 2021</p>
-</footer>
+  </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
