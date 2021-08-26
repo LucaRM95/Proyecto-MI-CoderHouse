@@ -263,7 +263,10 @@
             .contain{
                 &__main{
                     margin: 0;
-                    min-height: 690px;
+                    min-height: 795px;
+                    &--text{
+                        height: 545px !important;
+                    }
                 }
                 
                 .content-cards{
@@ -377,6 +380,9 @@
                     &--help{
                         width: 100% !important;
                         height: 600px !important;
+                    }
+                    &--text{
+                        height: 615px !important;
                     }
                 }
             }

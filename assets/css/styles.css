@@ -184,7 +184,10 @@
   }
   * body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
     margin: 0;
-    min-height: 690px;
+    min-height: 795px;
+  }
+  * body .contain__main--text, html body .contain__main--text {
+    height: 545px !important;
   }
   * body .contain .content-cards, * body .contact_section .content-cards, html body .contain .content-cards, html body .contact_section .content-cards {
     align-items: center;
@@ -261,6 +264,9 @@
   * body .contain__main--help, html body .contain__main--help {
     width: 100% !important;
     height: 600px !important;
+  }
+  * body .contain__main--text, html body .contain__main--text {
+    height: 615px !important;
   }
   * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
     width: 150px !important;
@@ -464,7 +470,10 @@
   }
   * body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
     margin: 0;
-    min-height: 690px;
+    min-height: 795px;
+  }
+  * body .contain__main--text, html body .contain__main--text {
+    height: 545px !important;
   }
   * body .contain .content-cards, * body .contact_section .content-cards, html body .contain .content-cards, html body .contact_section .content-cards {
     align-items: center;
@@ -541,6 +550,9 @@
   * body .contain__main--help, html body .contain__main--help {
     width: 100% !important;
     height: 600px !important;
+  }
+  * body .contain__main--text, html body .contain__main--text {
+    height: 615px !important;
   }
   * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
     width: 150px !important;
@@ -797,7 +809,10 @@ footer p {
   }
   * body .contain__main, * body .help_section__item, * html body .help_section__item, html * body .help_section__item, html body .contain__main, html body .help_section__item {
     margin: 0;
-    min-height: 690px;
+    min-height: 795px;
+  }
+  * body .contain__main--text, html body .contain__main--text {
+    height: 545px !important;
   }
   * body .contain .content-cards, * body .contact_section .content-cards, html body .contain .content-cards, html body .contact_section .content-cards {
     align-items: center;
@@ -874,6 +889,9 @@ footer p {
   * body .contain__main--help, html body .contain__main--help {
     width: 100% !important;
     height: 600px !important;
+  }
+  * body .contain__main--text, html body .contain__main--text {
+    height: 615px !important;
   }
   * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
     width: 150px !important;
