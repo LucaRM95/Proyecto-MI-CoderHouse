@@ -978,18 +978,30 @@ footer p {
 
 * body #help-section, html body #help-section {
   background-image: url("../img/help-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 * body #product-section, html body #product-section {
   background-image: url("../img/products-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 * body #work-section, html body #work-section {
   background-image: url("../img/our-work.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 * body #shop-section, html body #shop-section {
   background-image: url("../img/shop-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 * body .main-section, html body .main-section {
@@ -997,11 +1009,7 @@ footer p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/MI-bg.png");
   min-height: 610px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 * body .main-section__card, html body .main-section__card {
@@ -1011,6 +1019,8 @@ footer p {
   align-items: center;
   background-color: rgba(184, 134, 69, 0.9);
   border-radius: 5px;
+  position: absolute;
+  z-index: 2;
   width: 30%;
   height: 250px;
 }
@@ -1030,6 +1040,23 @@ footer p {
   text-transform: uppercase;
   font-weight: bold;
   color: white;
+}
+
+* body .carousel, html body .carousel {
+  height: 606px;
+}
+
+* body .carousel1, html body .carousel1 {
+  height: auto !important;
+}
+
+* body .w-100, html body .w-100 {
+  width: auto !important;
+  height: auto;
+}
+
+* body .w-101, html body .w-101 {
+  width: 100% !important;
 }
 
 * body .btn, html body .btn {
