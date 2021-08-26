@@ -217,7 +217,7 @@
 @media only screen and (min-width: 640px) {
   * body .blog-card, html body .blog-card {
     flex-direction: row;
-    max-width: 90% !important;
+    max-width: 90%;
     min-height: 325px;
   }
   * body .blog-card .meta, html body .blog-card .meta {
@@ -511,7 +511,7 @@
 @media only screen and (min-width: 640px) {
   * body .blog-card, html body .blog-card {
     flex-direction: row;
-    max-width: 90% !important;
+    max-width: 90%;
     min-height: 325px;
   }
   * body .blog-card .meta, html body .blog-card .meta {
@@ -858,7 +858,7 @@ footer p {
 @media only screen and (min-width: 640px) {
   * body .blog-card, html body .blog-card {
     flex-direction: row;
-    max-width: 90% !important;
+    max-width: 90%;
     min-height: 325px;
   }
   * body .blog-card .meta, html body .blog-card .meta {
@@ -1446,7 +1446,7 @@ footer p {
   display: inline-block;
 }
 
-.blog-card .details .author:before {
+.blog-card .details .price:before {
   font-family: FontAwesome;
   margin-right: 10px;
   content: "\f07a";
