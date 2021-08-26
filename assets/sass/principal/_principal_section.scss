@@ -166,9 +166,11 @@
                 margin-bottom: 1rem;
                 margin-top: 1rem;
                 width: 40%;
-                min-height: 320px;
+                height: 795px;
                 &--text{
                     @include display(flex, column, center, center);
+                    height: 350px;
+                    justify-content: space-evenly;
                     h2, p, strong, span, form{
                         text-align: center;
                         margin-left: 2rem;

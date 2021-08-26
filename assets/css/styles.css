@@ -1130,7 +1130,7 @@ footer p {
   margin-bottom: 1rem;
   margin-top: 1rem;
   width: 40%;
-  min-height: 320px;
+  height: 795px;
 }
 
 * body .contain__main--text, html body .contain__main--text {
@@ -1138,6 +1138,8 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 350px;
+  justify-content: space-evenly;
 }
 
 * body .contain__main--text h2, * body .contain__main--text p, * body .contain__main--text strong, * body .contain__main--text span, * body .contain__main--text form, html body .contain__main--text h2, html body .contain__main--text p, html body .contain__main--text strong, html body .contain__main--text span, html body .contain__main--text form {
