@@ -232,6 +232,9 @@
   * body .blog-card, html body .blog-card {
     width: 85%;
   }
+  * body .contain__main--text, html body .contain__main--text {
+    height: 615px !important;
+  }
   * body .publ-section .publ-section__align .publ-section__align--text, html body .publ-section .publ-section__align .publ-section__align--text {
     letter-spacing: 0.1rem;
     word-spacing: 0rem;
@@ -264,9 +267,6 @@
   * body .contain__main--help, html body .contain__main--help {
     width: 100% !important;
     height: 600px !important;
-  }
-  * body .contain__main--text, html body .contain__main--text {
-    height: 615px !important;
   }
   * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
     width: 150px !important;
@@ -518,6 +518,9 @@
   * body .blog-card, html body .blog-card {
     width: 85%;
   }
+  * body .contain__main--text, html body .contain__main--text {
+    height: 615px !important;
+  }
   * body .publ-section .publ-section__align .publ-section__align--text, html body .publ-section .publ-section__align .publ-section__align--text {
     letter-spacing: 0.1rem;
     word-spacing: 0rem;
@@ -550,9 +553,6 @@
   * body .contain__main--help, html body .contain__main--help {
     width: 100% !important;
     height: 600px !important;
-  }
-  * body .contain__main--text, html body .contain__main--text {
-    height: 615px !important;
   }
   * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
     width: 150px !important;
@@ -857,6 +857,9 @@ footer p {
   * body .blog-card, html body .blog-card {
     width: 85%;
   }
+  * body .contain__main--text, html body .contain__main--text {
+    height: 615px !important;
+  }
   * body .publ-section .publ-section__align .publ-section__align--text, html body .publ-section .publ-section__align .publ-section__align--text {
     letter-spacing: 0.1rem;
     word-spacing: 0rem;
@@ -889,9 +892,6 @@ footer p {
   * body .contain__main--help, html body .contain__main--help {
     width: 100% !important;
     height: 600px !important;
-  }
-  * body .contain__main--text, html body .contain__main--text {
-    height: 615px !important;
   }
   * body .contact_section__item--bg .shop-iframe iframe, html body .contact_section__item--bg .shop-iframe iframe {
     width: 150px !important;

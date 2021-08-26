@@ -328,6 +328,13 @@
             .blog-card{
                 width: 85%;
             }
+            .contain{
+                &__main{
+                    &--text{
+                        height: 615px !important;
+                    }
+                }
+            }
             .publ-section{
                 .publ-section__align{
                     .publ-section__align--text{
@@ -380,9 +387,6 @@
                     &--help{
                         width: 100% !important;
                         height: 600px !important;
-                    }
-                    &--text{
-                        height: 615px !important;
                     }
                 }
             }
