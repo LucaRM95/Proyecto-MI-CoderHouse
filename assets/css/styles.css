@@ -23,6 +23,12 @@
   }
 }
 
+@media only screen and (max-width: 1120px) {
+  * body .main-section__card, html body .main-section__card {
+    width: 60% !important;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   * body .grid-products, html body .grid-products {
     grid-template-columns: 1fr;
@@ -75,9 +81,6 @@
   }
   * body .search-bar input[type="button"], html body .search-bar input[type="button"] {
     width: 10% !important;
-  }
-  * body .main-section__card, html body .main-section__card {
-    width: 60% !important;
   }
   * body .contact_section__item, html body .contact_section__item {
     justify-content: flex-start;
@@ -309,6 +312,12 @@
   }
 }
 
+@media only screen and (max-width: 1120px) {
+  * body .main-section__card, html body .main-section__card {
+    width: 60% !important;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   * body .grid-products, html body .grid-products {
     grid-template-columns: 1fr;
@@ -361,9 +370,6 @@
   }
   * body .search-bar input[type="button"], html body .search-bar input[type="button"] {
     width: 10% !important;
-  }
-  * body .main-section__card, html body .main-section__card {
-    width: 60% !important;
   }
   * body .contact_section__item, html body .contact_section__item {
     justify-content: flex-start;
@@ -648,6 +654,12 @@ footer p {
   }
 }
 
+@media only screen and (max-width: 1120px) {
+  * body .main-section__card, html body .main-section__card {
+    width: 60% !important;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   * body .grid-products, html body .grid-products {
     grid-template-columns: 1fr;
@@ -700,9 +712,6 @@ footer p {
   }
   * body .search-bar input[type="button"], html body .search-bar input[type="button"] {
     width: 10% !important;
-  }
-  * body .main-section__card, html body .main-section__card {
-    width: 60% !important;
   }
   * body .contact_section__item, html body .contact_section__item {
     justify-content: flex-start;
