@@ -962,28 +962,28 @@ footer p {
 }
 
 * body #help-section, html body #help-section {
-  background-image: url("../img/help-bg.jpg");
+  background-image: url("../img/help-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 * body #product-section, html body #product-section {
-  background-image: url("../img/products-bg.png");
+  background-image: url("../img/products-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 * body #work-section, html body #work-section {
-  background-image: url("../img/our-work.png");
+  background-image: url("../img/our-work.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 * body #shop-section, html body #shop-section {
-  background-image: url("../img/shop-bg.png");
+  background-image: url("../img/shop-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
